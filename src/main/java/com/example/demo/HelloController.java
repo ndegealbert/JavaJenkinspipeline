@@ -20,6 +20,12 @@ public class HelloController {
         return "Hello, World!";
     }
 
+     // Define the endpoint /hello
+     @GetMapping("/hello")
+     public String Test() {
+         return "Keep testing!";
+     }
+
     @PostMapping("/login")
     public String handlePost(@RequestBody String data) {
         // Handle the POST request data
